@@ -5,19 +5,13 @@ namespace Betelgeuse;
 /// </summary>
 public class World
 {
+    public Simulation Simulation { get; set; } = Simulation.Best(0.04f);
+
     readonly List<Body> bodies = [];
 
     public void Add(Body body)
         => bodies.Add(body);
     
     public void Tick(float dt)
-    {
-        Parallel.ForEach(bodies,
-            (body, token) => body.ComputeForce(dt)
-        );
-        
-        Parallel.ForEach(bodies,
-            (body, token) => body.Tick(dt)
-        );
-    }
+        => Simulation.Tick(bodies, dt);
 }
