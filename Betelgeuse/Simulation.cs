@@ -4,7 +4,7 @@ namespace Betelgeuse;
 
 public abstract class Simulation
 {
-    public static readonly Simulation Default = new DefaultSimulation();
+    public static readonly Simulation Sequential = new SequentialSimulation();
     public static readonly Simulation Parallel = new ParallelSimulation();
     public static readonly Simulation Mixed = new MixedSimulation();
     public static readonly Simulation Adaptative = new AdaptativeSimulation();
