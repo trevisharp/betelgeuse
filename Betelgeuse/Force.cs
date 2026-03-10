@@ -1,5 +1,8 @@
-namespace Epicycles;
+namespace Betelgeuse;
 
+/// <summary>
+/// Represents a force between bodies.
+/// </summary>
 public abstract class Force
 {
     public abstract Vector Apply(Body body, float dt);

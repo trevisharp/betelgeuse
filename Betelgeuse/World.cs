@@ -1,5 +1,8 @@
-namespace Epicycles;
+namespace Betelgeuse;
 
+/// <summary>
+/// The world simulation.
+/// </summary>
 public class World
 {
     readonly List<Body> bodies = [];

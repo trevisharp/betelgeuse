@@ -1,4 +1,4 @@
-namespace Epicycles;
+namespace Betelgeuse;
 
 /// <summary>
 /// A abstract physical 2D body.

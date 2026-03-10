@@ -1,5 +1,8 @@
-namespace Epicycles;
+namespace Betelgeuse;
 
+/// <summary>
+/// A 2D mathmatical vector.
+/// </summary>
 public record Vector(float X, float Y)
 {
     public static Vector operator +(Vector v, Vector u)
